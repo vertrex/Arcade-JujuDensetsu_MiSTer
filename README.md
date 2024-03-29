@@ -1,7 +1,9 @@
 # Toki / JuJu Densetsu for Mister FPGA :
 
 This is a port of [JuJu Densetsu](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=juju&lang=en) alias Toki, in verilog for [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer/wiki).
-A plateformer arcade game made by [TAD Corporation](https://en.wikipedia.org/wiki/Toki_(video_game) in 1989 on [Seibu](https://en.wikipedia.org/wiki/Seibu_Kaihatsu) designed hardware.
+
+A plateformer arcade game made by [TAD Corporation](https://en.wikipedia.org/wiki/Toki_(video_game)) in 1989 on [Seibu](https://en.wikipedia.org/wiki/Seibu_Kaihatsu) designed hardware.
+
 This core is based mainly on [MAME sources](https://github.com/mamedev/mame), some PCB measurements and ROM reverse-engineering. 
 
 
