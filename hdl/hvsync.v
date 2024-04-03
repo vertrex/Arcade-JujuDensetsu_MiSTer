@@ -5,7 +5,8 @@
 // for the @6mhz video clock 
 //
 module hvsync(
-  input clk_pixel,
+  input clk,
+  input pxl_cen,
  
   // Video out 
   output reg hsync,
@@ -40,7 +41,7 @@ initial begin
 	vsync = 1'b0;
 end	
 
-always @(posedge clk_pixel) begin
+always @(posedge clk) if (pxl_cen) begin
   if (hpos == H_TOTAL-1) begin
 	  hpos <= 0;
 	  vpos <= vpos + 1'd1;
@@ -61,10 +62,10 @@ always @(posedge clk_pixel) begin
   endcase 
   
   case (vpos)
-    VBLANK_START : vblank <= 1;
-	  VBLANK_END   : vblank <= 0;
-	  VSYNC_START  : vsync <= 1;
-	  VSYNC_END 	 : vsync <= 0;
+    VBLANK_START : if (hpos == HBLANK_START) vblank <= 1;
+	  VBLANK_END   : if (hpos == HBLANK_END) vblank <= 0;
+	  VSYNC_START  : if (hpos == HSYNC_START) vsync <= 1;
+	  VSYNC_END 	 : if (hpos == HSYNC_START) vsync <= 0;
   endcase
 end	
 		

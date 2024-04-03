@@ -77,7 +77,8 @@ module toki_video(
 wire display_on;
 
 hvsync u_hvsync(
-  .clk_pixel(pxl_cen),
+  .clk(clk),
+  .pxl_cen(pxl_cen),
 
   .hsync(hsync),
   .vsync(vsync),
