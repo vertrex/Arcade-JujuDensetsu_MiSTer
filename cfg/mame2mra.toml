@@ -1,6 +1,5 @@
 [global]
-mraauthor=["Solal Jacob"]
-author="Solal Jacob"
+author=["Solal Jacob"]
 webpage="https://ko-fi.com/solalretrogaming"
 twitter="@s_on_vg"
 
@@ -12,6 +11,12 @@ skip.bootlegs=true
 [buttons]
 names = [
     { names="Shoot,Jump" }
+]
+
+[dipsw]
+# too long for MiST OSD:
+delete=[
+    { Names=["coinage"] }
 ]
 
 [ROM]
