@@ -1,4 +1,10 @@
-# Toki / JuJu Densetsu for Mister FPGA :
+> [!WARNING]  
+> This core is now part of [jtcores](https://github.com/jotego/jtcores)
+> the latest update will be available directly from it's repostiory and you must submit your issue to [jtcores](https://github.com/jotego/jtcores)
+> You can download the latest version of the core for mister/pocket and other platform directly from [jtbin](https://github.com/jotego/jtbin) that is updated frequently
+
+
+## Toki / JuJu Densetsu for Mister FPGA :
 
 This is a port of [JuJu Densetsu](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=juju&lang=en) alias Toki, in verilog for [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer/wiki).
 
@@ -7,7 +13,7 @@ A plateformer arcade game made by [TAD Corporation](https://en.wikipedia.org/wik
 This core is based mainly on [MAME sources](https://github.com/mamedev/mame), some PCB measurements and ROM reverse-engineering. 
 
 
-## ROM Files Instructions
+### ROM Files Instructions
 
 ROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.
 
@@ -25,7 +31,7 @@ Quick reference for folders and file placement:
 ```
 
 
-## How to compile :
+### How to compile :
 
 - This core use [jtrame](https://github.com/jotego/jtcores/) follow jtcores/jtframe installation instruction
 - Install Quartus 17.0
